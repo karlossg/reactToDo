@@ -7,23 +7,6 @@ module.exports = {
     filename: 'app.bundle.js'
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.css$/,
-        use: [
-          { loader: 'style-loader' },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true
-            }
-          }
-        ]
-      }
-    ]
+    rules: [{ test: /\.(js)$/, use: 'babel-loader' }, { test: /\.css$/, use: ['style-loader', 'css-loader'] }]
   }
 };

@@ -2475,8 +2475,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--1-1!./App.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--1-1!./App.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./App.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./App.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -2494,12 +2494,10 @@ exports = module.exports = __webpack_require__(20)(undefined);
 
 
 // module
-exports.push([module.i, "._1TSYf1DjZ96S21c76NVrcO {\r\n  background-color: #f5f5f5;\r\n  color: #222;\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n  align-content: center;\r\n  width: 100vw;\r\n  height: 100vh;\r\n}\r\n", ""]);
+exports.push([module.i, ".TodoApp {\r\n  background-color: #f5f5f5;\r\n  color: #222;\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n  align-content: center;\r\n  width: 100vw;\r\n  height: 100vh;\r\n}\r\n", ""]);
 
 // exports
-exports.locals = {
-	"TodoApp": "_1TSYf1DjZ96S21c76NVrcO"
-};
+
 
 /***/ }),
 /* 20 */
