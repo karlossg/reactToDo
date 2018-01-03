@@ -624,11 +624,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(9);
-
-var _react2 = _interopRequireDefault(_react);
 
 var _uuid = __webpack_require__(14);
 
@@ -640,59 +636,43 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       data: []
+//     };
+//   }
+//   addTodo(val) {
+//     const todo = {
+//       text: val,
+//       id: uuid.v4()
+//     };
+//     const data = [...this.state.data, todo];
+//     this.setState({ data });
+//   }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+//   removeTodo(id) {
+//     const remainder = this.state.data.filter(todo => todo.id !== id);
+//     this.setState({ data: remainder });
+//   }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+//   render() {
+//     return (
+//       <div className={style.TodoApp}>
+//         <p>test</p>Tutaj pojawią się komponenty naszej aplikacji.
+//       </div>
+//     );
+//   }
+// }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var App = function (_React$Component) {
-  _inherits(App, _React$Component);
-
-  function App(props) {
-    _classCallCheck(this, App);
-
-    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-
-    _this.state = {
-      data: []
-    };
-    return _this;
-  }
-
-  _createClass(App, [{
-    key: 'addTodo',
-    value: function addTodo(val) {
-      var todo = {
-        text: val,
-        id: _uuid2.default.v4()
-      };
-      var data = [].concat(_toConsumableArray(this.state.data), [todo]);
-      this.setState({ data: data });
-    }
-  }, {
-    key: 'removeTodo',
-    value: function removeTodo(id) {
-      var remainder = this.state.data.filter(function (todo) {
-        return todo.id !== id;
-      });
-      this.setState({ data: remainder });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: _App2.default.TodoApp },
-        'Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji.'
-      );
-    }
-  }]);
-
-  return App;
-}(_react2.default.Component);
+var App = function App() {
+  return _react.React.createElement(
+    'div',
+    { className: _App2.default.TodoApp },
+    'Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji.'
+  );
+};
 
 exports.default = App;
 
@@ -2495,8 +2475,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--1-1!./App.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js??ref--1-1!./App.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--1-1!./App.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--1-1!./App.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -2514,11 +2494,11 @@ exports = module.exports = __webpack_require__(20)(undefined);
 
 
 // module
-exports.push([module.i, "._1yWMblMhcoxIcFRQVWQUoB {\r\n  background-color: #f5f5f5;\r\n  color: #222;\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n  align-content: center;\r\n  width: 100vw;\r\n  height: 100vh;\r\n}\r\n", ""]);
+exports.push([module.i, "._1TSYf1DjZ96S21c76NVrcO {\r\n  background-color: #f5f5f5;\r\n  color: #222;\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n  align-content: center;\r\n  width: 100vw;\r\n  height: 100vh;\r\n}\r\n", ""]);
 
 // exports
 exports.locals = {
-	"TodoApp": "_1yWMblMhcoxIcFRQVWQUoB"
+	"TodoApp": "_1TSYf1DjZ96S21c76NVrcO"
 };
 
 /***/ }),
