@@ -32,6 +32,12 @@ import style from './styles/App.css';
 //   }
 // }
 
-const App = () => <div className={style.TodoApp}>Tutaj pojawią się komponenty naszej aplikacji.</div>;
+const App = function() {
+  return (
+    <div className={style.TodoApp}>
+      <p>lechia</p>
+    </div>
+  );
+};
 
 export default App;
