@@ -2,6 +2,7 @@ import React from 'react';
 import uuid from 'uuid';
 import styles from './App.css';
 import Title from '../components/Title';
+import TodoList from '../components/TodoList';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class App extends React.Component {
     return (
       <div className={styles.todoApp}>
         <Title todos={this.state.data.length} />
+        <TodoList todos={this.state.data} remove={this.removeTodo} />
       </div>
     );
   }
