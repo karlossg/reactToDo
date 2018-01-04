@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
+  "babel": {
+    "presets": ["env", "react"]
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -18,7 +21,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "style-loader": "^0.19.1",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
     "uuid": "^3.1.0"
