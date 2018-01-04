@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './Title.css';
+import styles from './Title.css';
 
-const Title = () => <h1>react to do list</h1>;
+const Title = props => <h1 className={styles.title}>React to do list (Todo's:{props.todos})</h1>;
 
 export default Title;
