@@ -23,6 +23,7 @@ module.exports = env => {
     );
   }
 
+  console.log(process.env.NODE_ENV);
   return {
     entry: './src/index.js',
     output: {
