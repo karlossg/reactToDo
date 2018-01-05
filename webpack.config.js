@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeJsPlugin = require('optimize-js-plugin');
 
-const NODE_MODULES = path.resolve(__dirname, 'node_modules');
+// const NODE_MODULES = path.resolve(__dirname, 'node_modules');
 
 module.exports = env => {
   var plugins = [
@@ -34,10 +34,12 @@ module.exports = env => {
       rules: [
         {
           test: /\.js$/,
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          exclude: /node_modules/
         },
         {
           test: /\.css$/,
+          exclude: /node_modules/,
           use: [
             { loader: 'style-loader' },
             {
