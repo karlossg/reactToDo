@@ -21,6 +21,7 @@
     "optimize-js-plugin": "0.0.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0-beta.12",
     "style-loader": "^0.19.1",
     "tapable": "^1.0.0-beta.5",
     "uglifyjs-webpack-plugin": "^1.1.5",
