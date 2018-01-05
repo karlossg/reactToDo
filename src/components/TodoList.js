@@ -3,7 +3,7 @@ import styles from './TodoList.css';
 
 const TodoList = props => {
   const todos = props.todos;
-  console.log(props);
+
   return (
     <ul>
       {todos.map(todo => (
