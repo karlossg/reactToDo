@@ -11,15 +11,7 @@ class App extends React.Component {
       data: [
         {
           id: 1,
-          text: 'clean room asdasda'
-        },
-        {
-          id: 2,
-          text: 'wash the dishes'
-        },
-        {
-          id: 3,
-          text: 'feed my catasd'
+          text: 'clean room'
         }
       ]
     };
