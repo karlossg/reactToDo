@@ -5,21 +5,20 @@ const TodoForm = props => {
   let input;
 
   return (
-    <div>
+    <form
+      onSubmit={event => {
+        event.preventDefault();
+        props.addTodo(input.value);
+        input.value = '';
+      }}>
       <input
         ref={node => {
           input = node;
         }}
       />
 
-      <button
-        onClick={() => {
-          props.addTodo(input.value);
-          input.value = '';
-        }}>
-        add
-      </button>
-    </div>
+      <button>add</button>
+    </form>
   );
 };
 export default TodoForm;
