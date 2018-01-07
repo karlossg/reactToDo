@@ -9,7 +9,12 @@ const TodoList = props => {
       {todos.map(todo => (
         <li key={todo.id} id={todo.id}>
           {todo.text}
-          <button onClick={e => props.remove(Number.parseInt(e.target.parentElement.id))}>x</button>
+          <button
+            onClick={e => {
+              props.remove(e.target.parentElement.id);
+            }}>
+            x
+          </button>
         </li>
       ))}
     </ul>

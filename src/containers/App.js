@@ -3,17 +3,13 @@ import uuid from 'uuid';
 import styles from './App.css';
 import Title from '../components/Title';
 import TodoList from '../components/TodoList';
+import TodoForm from '../components/TodoForm';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [
-        {
-          id: 1,
-          text: 'clean room'
-        }
-      ]
+      data: []
     };
   }
   addTodo(val) {
@@ -34,6 +30,7 @@ class App extends React.Component {
     return (
       <div className={styles.todoApp}>
         <Title todos={this.state.data.length} />
+        <TodoForm addTodo={val => this.addTodo(val)} />
         <TodoList todos={this.state.data} remove={id => this.removeTodo(id)} />
       </div>
     );
