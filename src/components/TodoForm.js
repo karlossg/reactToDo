@@ -10,7 +10,8 @@ const TodoForm = props => {
         event.preventDefault();
         props.addTodo(input.value);
         input.value = '';
-      }}>
+      }}
+    >
       <input
         ref={node => {
           input = node;
