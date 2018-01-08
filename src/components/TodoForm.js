@@ -6,6 +6,7 @@ const TodoForm = props => {
 
   return (
     <form
+      className={styles.TodoForm}
       onSubmit={event => {
         event.preventDefault();
         props.addTodo(input.value);
@@ -18,7 +19,7 @@ const TodoForm = props => {
         }}
       />
 
-      <button>add</button>
+      <button className={styles.button}>add</button>
     </form>
   );
 };

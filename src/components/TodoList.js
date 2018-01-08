@@ -1,23 +1,9 @@
 import React from 'react';
+import Todo from '../components/Todo';
 import styles from './TodoList.css';
 
 const TodoList = props => {
   const todos = props.todos;
-
-  return (
-    <ul>
-      {todos.map(todo => (
-        <li key={todo.id} id={todo.id}>
-          {todo.text}
-          <button
-            onClick={e => {
-              props.remove(e.target.parentElement.id);
-            }}>
-            x
-          </button>
-        </li>
-      ))}
-    </ul>
-  );
+  return <ul>{todos.map(todo => <Todo key={todo.id} todo={todo} remove={props.remove} />)}</ul>;
 };
 export default TodoList;

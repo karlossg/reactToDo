@@ -1,0 +1,19 @@
+.deleteButton {
+  border-width: 0px 0.2px 0.2px 0px;
+  color: #000000;
+  background-color: #f5a675;
+  border-radius: 5px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 4px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.list {
+  text-align: left;
+  margin: 0 auto;
+  width: 200px;
+  font-family: 'Noto Sans', 'Times New Roman', Times, serif;
+}

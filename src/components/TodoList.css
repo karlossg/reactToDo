@@ -1,0 +1,19 @@
+.todoForm {
+  width: 200px;
+  height: 20px;
+  background-color: #f1bc9b;
+  border-radius: 5px;
+}
+
+.button {
+  border-width: 0px 0.2px 0.2px 0px;
+  color: #000000;
+  background-color: #f5a675;
+  border-radius: 5px;
+  height: 25px;
+  cursor: pointer;
+  font-family: 'Noto Sans', 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 4px;
+  font-size: 12px;
+}
